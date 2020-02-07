@@ -1,0 +1,24 @@
+services:
+    toyokumo.csp.header:
+        class: Toyokumo\CspBundle\Annotation\Header
+        public: true
+        arguments:
+            - '%toyokumo.csp.default%'
+            - '%toyokumo.csp.script%'
+            - '%toyokumo.csp.style%'
+            - '%toyokumo.csp.frame%'
+            - '%toyokumo.csp.manifest%'
+            - '%toyokumo.csp.img%'
+            - '%toyokumo.csp.font%'
+            - '%toyokumo.csp.connect%'
+            - '%toyokumo.csp.object%'
+            - '%toyokumo.csp.media%'
+            - '%toyokumo.csp.sandbox%'
+            - '%toyokumo.csp.child%'
+            - '%toyokumo.csp.form-action%'
+            - '%toyokumo.csp.frame-ancestors%'
+            - '%toyokumo.csp.plugin-types%'
+            - '%toyokumo.csp.base-uri%'
+            - '%toyokumo.csp.report-uri%'
+
+    Toyokumo\CspBundle\Annotation\Header: '@toyokumo.csp.header'
