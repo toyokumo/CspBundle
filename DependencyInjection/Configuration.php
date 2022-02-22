@@ -12,8 +12,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('toyokumo_csp');
+        $treeBuilder = new TreeBuilder('toyokumo_csp');
+        $rootNode = $treeBuilder->getRootNode();
         $rootNode->children()
             ->scalarNode('default_src')
             ->defaultNull()
